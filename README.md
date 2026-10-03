@@ -7,7 +7,7 @@
 ![Banner](https://i.imgur.com/IARdN3q.gif)
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=6__Zd4GXCmU)
-[![Version](https://img.shields.io/badge/version-1.0.1-blue)]()
+[![Version](https://img.shields.io/badge/version-1.0.2-blue)]()
 [![License](https://img.shields.io/badge/license-Open%20Source-green)]()
 [![Languages](https://img.shields.io/badge/languages-7-orange)]()
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Download and extract the archive.
 2. Open Opera / Chrome / Edge (any Chromium-based browser) → go to `chrome://extensions` → enable **Developer mode**.
@@ -33,9 +33,9 @@
 
 ---
 
-## ✨ Features
+## Features
 
-### 🤖 Main Routine
+### Main Routine
 - **Auto Robbery** — picks the strongest safe robbery within your power margin
 - **Gang Robbery** — auto-accepts invites and executes active gang robberies
 - **Stamina Refill** — refills via tickets or rave party when below threshold
@@ -47,35 +47,35 @@
 - **Factories** — auto-collects finished production and performs maintenance when needed
 - **Laboratory** — manages production queue: collects completed batches and starts new ones with your selected components
 
-### ⏱️ Timing & Anti-Ban
+### Timing & Anti-Ban
 - **3 Presets** — Safe / Medium / Fast one-click timing profiles
 - **Min/Max action delay** — robbery / stamina transitions
 - **Min/Max cycle delay** — TaskRunner loop interval
 - **Min/Max activity gap** — random wait between different action types
 
-### 🎒 Inventory
+### Inventory
 - Auto-use item by ID (loaded via Sync)
 - Trigger modes: *low HP*, *before Robbery/Assault*, or *both*
 - Configurable HP threshold (%)
 
-### ✈️ Airport
+### Airport
 - Auto-collect arrived cargo
 - Auto-buy cheapest cargo on empty runways
 - Max cash per cargo
 - Cash reserve kept after purchase
 
-### 💰 Income & Bank
+### Income & Bank
 - Auto-collect hooker earnings above minimum
 - Auto free dice roll
 - Auto-deposit excess cash to bank
 - Configurable cash reserve + minimum deposit
 
-### 🔫 Robbery
+### Robbery
 - Filter: All / Cash only / Stocks / Events / Cash + Drugs & Components
 - Robbery safety margin (only robs within a % of your power)
 - **Default safety margin is 100%** — the bot picks the strongest affordable robbery, matching the game's own safety indicator
 
-### ⚡ Stamina Recovery
+### Stamina Recovery
 - Refill trigger threshold (%)
 - Target stamina (%)
 - Ticket refill target + minimum ticket reserve
@@ -83,29 +83,29 @@
 - Toggle ticket usage on/off
 - Allow unsafe public raves (optional)
 
-### ⚔️ Combat
+### Combat
 - Minimum HP before attacking
 - Combat safety margin (only attacks bots within a % of your power)
 - **Victim Filters** — blacklist / whitelist by username, ID or country
 - **Character Criteria** — per-class level and respect ranges (Businessman, Broker, Dealer, Hitman, Pimp, Robber, Gangster)
 
-### 🚔 Prison
+### Prison
 - Auto cash bribe out of prison
 - Maximum bribe amount
 
-### 🏥 Hospital
+### Hospital
 - Addiction threshold for auto-detox
 
-### 🧩 Execution Order
+### Execution Order
 - Reorder the module execution sequence with ▲▼ buttons
 - Enabled modules run top to bottom; the first ready one executes, then the cycle ends
 - Order is saved between sessions
 
-### 🕵️ Account Investigation
+### Account Investigation
 - One-click **Check Account** button scans `localStorage` + Vue store for anti-cheat investigation flags
 - Auto-check runs when **Start** is pressed; shows a confirmation dialog if the account is flagged
 
-### 🖥️ Interface
+### Interface
 - Live stats panel — Player, Level, Stamina, Tickets, HP, Robbery Power, Assault Power, Cycle count
 - Action / Cycle / Error counters + Runtime timer
 - Activity log tab
@@ -119,7 +119,7 @@
 
 ---
 
-## 📋 Changelog
+## Changelog
 
 <details>
 <summary><b>v1.0.1</b> — Click to expand</summary>
@@ -156,9 +156,7 @@
 
 ---
 
-## 📥 Download
+## Credits:
 
-Latest release is available in the **Releases** section of this repository.
-
-- **v1.0.1** — Working
-- **v1.0.0** — Working
+https://github.com/grimaldello/the-crims-italian-bot-v2
+https://github.com/dan606/TheCrimsRubberyBot
