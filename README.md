@@ -10,6 +10,9 @@
 [![Version](https://img.shields.io/badge/version-1.0.2-blue)]()
 [![License](https://img.shields.io/badge/license-Open%20Source-green)]()
 [![Languages](https://img.shields.io/badge/languages-7-orange)]()
+[![Download](https://img.shields.io/badge/Download-v1.0.2-brightgreen?logo=github&logoColor=white)](https://github.com/diusae/TCHB/releases/tag/tcbv1.0.2)
+
+**Türkçe • English • Español • Français • Português • Polski • العربية**
 
 </div>
 
