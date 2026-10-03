@@ -2,8 +2,6 @@
 
 # The Crims Helper (TCB)
 
-**The Crims için ücretsiz, açık kaynak tarayıcı botu — 7 dil destekli**
-
 ![Banner](https://i.imgur.com/IARdN3q.gif)
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=6__Zd4GXCmU)
