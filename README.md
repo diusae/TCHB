@@ -132,7 +132,7 @@
 - **Robbery safety default changed to 100%** — the bot now starts with the robbery safety margin at 100% instead of 90%. Previously, the 90% default caused the bot to skip robberies the game itself marked as 100% safe for the player (for example, "Fas Limanı" being skipped in favor of a lower-tier robbery). You can still lower it manually under **Strategy → Robbery** at any time.
 - Config safely merges older saves missing the new fields.
 
-- </details>
+ </details>
 
 <details>
 <summary><b>v1.0.1</b> — Click to expand</summary>
