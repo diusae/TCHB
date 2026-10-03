@@ -122,6 +122,19 @@
 ## Changelog
 
 <details>
+<summary><b>v1.0.2</b> — Click to expand</summary>
+  
+- **Full Translations** — all 7 languages (TR, EN, ES, FR, PT, PL, AR) now include the new sections, tooltips, log lines and status messages.
+- **University** — auto joins the active class, gives presence, completes it. Optional auto-enroll with cash or credits.
+- **Factories** — auto-collects finished production and performs maintenance when needed.
+- **Laboratory** — manages the production queue: collects completed batches and starts new ones with your selected components.
+- **ChangeLog** — added a dedicated ChangeLog tab inside the panel.
+- **Robbery safety default changed to 100%** — the bot now starts with the robbery safety margin at 100% instead of 90%. Previously, the 90% default caused the bot to skip robberies the game itself marked as 100% safe for the player (for example, "Fas Limanı" being skipped in favor of a lower-tier robbery). You can still lower it manually under **Strategy → Robbery** at any time.
+- Config safely merges older saves missing the new fields.
+
+- </details>
+
+<details>
 <summary><b>v1.0.1</b> — Click to expand</summary>
 
 - Added 7 languages (TR, EN, ES, FR, PT, PL, AR)
@@ -141,22 +154,15 @@
 
 ---
 
-## 🚧 Upcoming Update — v1.0.2
+## 🚧 Upcoming Update — v1.0.3
 
 > **This version has not been released yet.** Preview of what's coming.
 
-- **Full Translations** — all 7 languages (TR, EN, ES, FR, PT, PL, AR) now include the new sections, tooltips, log lines and status messages.
-- **University** — auto joins the active class, gives presence, completes it. Optional auto-enroll with cash or credits.
-- **Factories** — auto-collects finished production and performs maintenance when needed.
-- **Laboratory** — manages the production queue: collects completed batches and starts new ones with your selected components.
 - **Execution Order** — reorder how the bot cycles through modules with ▲▼ buttons. Enabled modules run top to bottom; the first ready one executes, then the cycle ends.
-- **ChangeLog** — added a dedicated ChangeLog tab inside the panel.
-- **Robbery safety default changed to 100%** — the bot now starts with the robbery safety margin at 100% instead of 90%. Previously, the 90% default caused the bot to skip robberies the game itself marked as 100% safe for the player (for example, "Fas Limanı" being skipped in favor of a lower-tier robbery). You can still lower it manually under **Strategy → Robbery** at any time.
-- Config safely merges older saves missing the new fields.
 
 ---
 
 ## Credits:
 
-https://github.com/grimaldello/the-crims-italian-bot-v2
-https://github.com/dan606/TheCrimsRubberyBot
+- https://github.com/grimaldello/the-crims-italian-bot-v2
+- https://github.com/dan606/TheCrimsRubberyBot
