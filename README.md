@@ -170,7 +170,7 @@
 
 ---
 
-## 🚧 Upcoming Update — v1.0.3
+## 🚧 Upcoming Update — v1.0.4
 
 > **This version has not been released yet.** Preview of what's coming.
 
