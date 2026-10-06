@@ -123,6 +123,21 @@
 ## Changelog
 
 <details>
+<summary><b>v1.0.3</b> — Click to expand</summary>
+  
+- **New Tab: Execution Order** — the run order is now its own category next to Assassination; drag & drop plus **Enable All** / **Disable All** buttons added. Enabled modules run top to bottom; the first ready one executes and the cycle ends.
+- **New Tab: Assassination** — AI Bot Fight, Victim Filters and Character Criteria merged here. Below them a live *filtered victims* history.
+- **Account Investigation** — `check-investigation` now has a real handler in `bridge.js`. If unsupported, the button hides itself automatically.
+- **Anti-ban Mutex** — `activity.run` fixed with a reentrant counter; same-type nested calls can no longer run in parallel.
+- **TTA Cap** — `doHuntBot` now works with a 2500ms upper bound (late hits prevented).
+- **Country Quick Add** — 60+ country codes can be added to the victim filter with a single click.
+- **Filtered Counter** — live "Filtered" counter in the stats panel.
+- **Investigation Cache TTL** — 30 minutes; reset on every start.
+- All 7 languages (TR, EN, ES, FR, PT, PL, AR) updated with the new sections, tooltips and execution-order translations.
+
+</details>
+
+<details>
 <summary><b>v1.0.2</b> — Click to expand</summary>
   
 - **Full Translations** — all 7 languages (TR, EN, ES, FR, PT, PL, AR) now include the new sections, tooltips, log lines and status messages.
@@ -159,7 +174,7 @@
 
 > **This version has not been released yet.** Preview of what's coming.
 
-- **Execution Order** — reorder how the bot cycles through modules with ▲▼ buttons. Enabled modules run top to bottom; the first ready one executes, then the cycle ends.
+- **XX**
 
 ---
 
