@@ -2,7 +2,7 @@
 
 # The Crims Helper (TCB)
 
-![Banner](https://i.imgur.com/IARdN3q.gif)
+![Banner](https://i.imgur.com/DUHD8Ny.gif)
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=6__Zd4GXCmU)
 [![Version](https://img.shields.io/badge/version-1.0.2-blue)]()
