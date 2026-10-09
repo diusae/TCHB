@@ -10,7 +10,7 @@
 [![Languages](https://img.shields.io/badge/languages-7-orange)]()
 [![Download](https://img.shields.io/badge/Download-v1.0.2-brightgreen?logo=github&logoColor=white)](https://github.com/diusae/TCHB/releases/tag/tcbv1.0.2)
 
-**Türkçe • English • Español • Français • Português • Polski • العربية**
+**Türkçe • English • Español • Français • Português • Polski • العربية** • Russian
 
 </div>
 
