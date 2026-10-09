@@ -123,6 +123,42 @@
 ## Changelog
 
 <details>
+<summary><b>v1.0.5</b> — Click to expand</summary>
+  
+- **Split Stamina Refill** — energy refill is now two independent modules: **Stamina (Night Club)** and **Stamina (Tickets)**. Each has its own toggle, its own execution-order slot, and falls back to the other if it fails.
+- **Night Club Refill — DOM Based** — clicks the real in-game button `#robbery-stamina-refill` on `/robberies`, parses the fee directly from the button label, and checks it against your cash limit. Falls back to the legacy nightclub API if the button is missing.
+- **Ticket Refill — 10 Tickets per Call** — now sends `min(10, tickets - ticketReserve)` every cycle instead of just enough to top up. Ticket reserve is subtracted up front, so reserved tickets are never spent.
+- **Retry Between Modules** — if Night Club refill fails (fee over limit, DOM button missing, API refusal), the execution order automatically falls through to the Tickets module in the same cycle, and vice-versa.
+- **Assault Pre-Check** — new option **AI Bot min. Stamina (%)** (default 90). Before attacking an AI bot, if stamina is below this %, the bot first tries to refill with tickets, then falls back to Night Club. Prevents wasted hits with low stamina.
+- **Gang Robbery HP Threshold — UI Control** — new option **Gang robbery min. HP (%)** (default 30). Bot skips gang robberies if HP is below this %. Previously hard-coded and users couldn't join gang robberies while low HP.
+- **Order Presets** — three one-click buttons in the Order tab: **Full Order**, **AI Bot Focus**, and **Robbery Focus**. Each preset rewrites the execution order AND enables/disables the correct modules in one shot. No more manual reordering when switching play styles.
+- **New Config Key** — `autoStaminaTickets: true` added to DEFAULTS. Older saves are merged safely; the new key defaults to ON so existing users keep refilling stamina out of the box.
+- **New Execution Order Key** — `stamina_tickets` is now a first-class entry in `executionOrder`, `EXECUTION_MODULES`, `EXEC_LABEL_KEY` and `CHECKBOX_MAP`. Drag & drop, ▲▼ buttons and Enable All / Disable All work on it like any other module.
+- **Removed Legacy Early-Exit** — the old eager stamina check inside `oneCycle()` that ran before the execution-order loop was removed. Stamina is now handled entirely by the ordering system.
+- **Stamina Capacity Fix** — `staminaPct()` and `staminaCapacity()` were forcing 100 when the points-system flag was true, causing the panel to show full stamina (114/100) while the game reported 114/150. Both functions now prefer the actual `stamina_max` from the API, so displayed values and refill decisions match the game.
+- **Gang Robbery Safety Margin** — `gangRobberySafetyMargin` default updated from 0.9 to 1.0 in DEFAULTS.
+- **Russian Language Added** — full Russian (ru) translation covering all sections, tooltips, log lines, combat messages and status strings. The language picker now shows 8 languages: TR, EN, ES, FR, PT, PL, AR, RU.
+- **Contact Button** — a new Contact button was added to the top-right of the panel header. It opens the UnKnoWnCheaTs forum thread in a new tab with `noopener,noreferrer`. Label is translated to all 8 languages (TR: İletişim, EN: Contact, RU: Связь, AR: اتصال, …).
+- **UI — Main Routine Panel** — the single "Stamina Refill" row in Automation → Main Routine was replaced with two separate toggle rows, each with its own tooltip. Switch state stays in sync across Automation, Execution Order and the Enable All / Disable All bulk buttons.
+- **CSS Cleanup** — removed duplicate `.header-actions` and `.contact-btn` rules that caused specificity conflicts. The Contact button now renders as a compact pill using a single `all: unset` rule set.
+
+</details>
+
+<details>
+<summary><b>v1.0.4</b> — Click to expand</summary>
+  
+- **Robbery Throttle Fixed** — robbery, gang robbery, assault and stamina modules no longer have a 30-second cooldown. Anti-spam is handled entirely by `activityMinGapMs` (3-5s default).
+- **Selective Throttling** — only long-period modules (detox, university, factories, laboratory, hookers, airport, bank, dice, levelup, training) are throttled. Robbery / gang / assault / stamina run every cycle.
+- **Fresh State for Robbery** — the robbery module now re-fetches `/api/v1/robberies` before executing, so stamina changes from a refill are reflected immediately. Removes the "no safe robbery" false negatives right after a refill.
+- **Panel Not Opening — FIXED** — fixed a SyntaxError caused by a duplicate `normalizedExecutionOrder()` declaration and a misplaced `const THROTTLED` inside the `EXEC_LABEL_KEY` object. These errors crashed the whole content script and made the launcher and panel invisible.
+- **EXECUTION_KEYS Restored** — the `EXECUTION_KEYS` constant that was accidentally removed in v1.0.3 is back. It is required by the execution-order normalizer.
+- **applyLanguage Cleanup** — a duplicated inner `applyLanguage()` function that broke language switching (UI not refreshing, checkboxes going out of sync) has been removed.
+- **Default Order Updated** — Robbery → Detox → Assault → Gang → Level Up → Recovery → University → Factories → Laboratory → Hookers → Airport → Bank → Dice → Training. This mirrors the natural priority for most players.
+- **Duplicate-Function Guard** — a code cleanup pass on the execution-order block prevents future merge accidents of the same kind.
+
+</details>
+
+<details>
 <summary><b>v1.0.3</b> — Click to expand</summary>
   
 - **New Tab: Execution Order** — the run order is now its own category next to Assassination; drag & drop plus **Enable All** / **Disable All** buttons added. Enabled modules run top to bottom; the first ready one executes and the cycle ends.
@@ -167,14 +203,6 @@
 - Initial release
 
 </details>
-
----
-
-## 🚧 Upcoming Update — v1.0.4
-
-> **This version has not been released yet.** Preview of what's coming.
-
-- **XX**
 
 ---
 
