@@ -7,10 +7,10 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=6__Zd4GXCmU)
 [![Version](https://img.shields.io/badge/version-1.0.5-blue)]()
 [![License](https://img.shields.io/badge/license-Open%20Source-green)]()
-[![Languages](https://img.shields.io/badge/languages-7-orange)]()
-[![Download](https://img.shields.io/badge/Download-v1.0.2-brightgreen?logo=github&logoColor=white)](https://github.com/diusae/TCHB/releases/tag/tcbv1.0.2)
+[![Languages](https://img.shields.io/badge/languages-8-orange)]()
+[![Download](https://img.shields.io/badge/Download-v1.0.5-brightgreen?logo=github&logoColor=white)](https://github.com/diusae/TCHB/releases/tag/tcbv1.0.5)
 
-**Türkçe • English • Español • Français • Português • Polski • العربية** • Russian
+**Türkçe • English • Español • Français • Português • Polski • العربية • Russian**
 
 </div>
 
